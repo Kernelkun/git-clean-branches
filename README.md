@@ -59,15 +59,15 @@ You can generate a full clean build with `yarn build-all` (which uses both `tsc`
 You can write [Jest tests](https://jestjs.io/docs/getting-started) [like this](https://github.com/metachris/typescript-boilerplate/blob/master/src/main.test.ts):
 
 ```typescript
-import { greet } from './main'
+import { greet } from './main';
 
 test('the data is peanut butter', () => {
-  expect(1).toBe(1)
-})
+  expect(1).toBe(1);
+});
 
 test('greeting', () => {
-  expect(greet('Foo')).toBe('Hello Foo')
-})
+  expect(greet('Foo')).toBe('Hello Foo');
+});
 ```
 
 Run the tests with `yarn test`, no separate compile step is necessary.
