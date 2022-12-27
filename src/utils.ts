@@ -58,3 +58,16 @@ export const getLocalBranches = async () => {
     throw new Error('Error getting remote branches.');
   }
 };
+/**
+ * Delete local branches.
+ * @param branch The branch to be deleted.
+ * @return A boolean.
+ */
+export const deleteBranch = async (branch: string) => {
+  try {
+    const { stdout } = await exec(`git branch --delete ${branch}`);
+    return stdout.trim();
+  } catch {
+    throw new Error(`Error deleting local branch: ${branch}.`);
+  }
+};

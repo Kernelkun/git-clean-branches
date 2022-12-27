@@ -3,6 +3,8 @@ import { Command } from 'commander';
 import { listBranches } from './commands';
 const program = new Command();
 
+if (process.argv.length === 0) listBranches();
+
 program
   .description(
     'CLI to check the local branches that are missing on the remote.'
