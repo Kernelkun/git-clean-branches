@@ -1,7 +1,7 @@
 {
   "name": "git-clean-branches",
   "version": "0.0.1",
-  "description": "Command to check the local branches that are missing on the remote.",
+  "description": "CLI to check the local branches that are missing on the remote.",
   "author": "José Juan Gázquez Melero <jose.j.gazquez@gmail.com>",
   "repository": "https://github.com/kernelkun/git-clean-branches",
   "license": "MIT",
@@ -45,5 +45,8 @@
     "ts-node": "10.9.1",
     "typedoc": "^0.22.15",
     "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "commander": "^9.4.1"
   }
 }
